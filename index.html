@@ -1,149 +1,248 @@
 <html>
-    <style>
-        /* Reset CSS */
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed, 
-        figure, figcaption, footer, header, hgroup, 
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-        /* HTML5 display-role reset for older browsers */
-        article, aside, details, figcaption, figure, 
-        footer, header, hgroup, menu, nav, section {
-            display: block;
-        }
-        body {
-            line-height: 1;
-        }
-        ol, ul {
-            list-style: none;
-        }
-        blockquote, q {
-            quotes: none;
-        }
-        blockquote:before, blockquote:after,
-        q:before, q:after {
-            content: '';
-            content: none;
-        }
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-        /* Custom CSS */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table {
-            border: 0;
-            padding: 0;
-            color:rgb(0,0,0);
-            font-size:medium;
-            table-layout:fixed
-        }
-        td {
-            text-align: left;
-            vertical-align: top;
-        }
-        strong {
-            font-weight:bold;
-        }
-        .signature__container {
-            padding-top: 8px;
-            font-size:10px;
-            line-height:12px;
-            color:rgb(33,33,33);
-        }
-        .signature__container p {
-            margin-bottom:10px;
-        }
-        .signature__left-column {
-            width: 64px;
-            margin-right:10px;
-            font-size:10px;
-            line-height:12px;
-            margin-bottom:10px
-        }
-        .signature__right-column {
-            padding-top: 8px;
-            width: 396px;
-        }
-        .signature__link {
-            color:rgb(71,124,204);
-            text-decoration:none;
-        }
-        .signature__disclaimer {
-            color:rgb(135,135,135);
-            font-family: Calibri, sans-serif;
-            text-align:justify;
-        }
-        .signature__xibit-digital-logo {
-            border: 0;
-            height: 80px;
-            width: 54px;
-        }
-        .signature__linkedin-logo {
-            margin-bottom:2px;
-            border:none;
-            display:inline;
-            width: 16px;
-            height: 16px;
-        }
-    </style>
-    <body>
-        <table class="signature__container">
-            <tbody>
-                <tr>
-                    <td class="signature__left-column">
-                        <p>
-                            <a href="https://xibitdigital.com" class="signature__link" target="_blank">
-                                <img src="https://lh3.googleusercontent.com/d/1AUxXAkiSXF997u7x7RnonlBa8Zc0x2XS" data-aii="CiExQVV4WEFraVNYRjk5N3U3eDdSbm9ubEJhOFpjMHgyWFM" alt="Xibit Digital Ltd" class="signature__xibit-digital-logo">
-                            </a>
-                        </p>
-                    </td>
-                    <td class="signature__right-column">
-                        <p>
-                            <strong>Daniele Sangalli</strong> / Director
-                        </p>
-                        <p>
-                            <a href="mailto:daniele@xibitdigital.com" class="signature__link" target="_blank">
-                                daniele@xibitdigital.com
-                            </a> / +44 7885905951
-                        </p>
-                        <p>
-                            <span>
-                                <a href="https://uk.linkedin.com/in/danielesangalli" class="signature__link" target="_blank">
-                                    <img src="https://s3.amazonaws.com/htmlsig-assets/grey/linkedin.png" alt="LinkedIn" class="signature__linkedin-logo">
-                                </a>
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <strong>Xibit Digital </strong>/ <a href="https://xibitdigital.com" class="signature__link" target="_blank">https://xibitdigital.com</a>
-                            </span>
-                        </p>
-                        <p>
-                            <span class="signature__disclaimer">
-                                This message contains confidential information and is intended only for the intended recipients. If you are not an intended recipient you should not disseminate, distribute or copy this e-mail. Please notify the sender immediately by e-mail if you have received this e-mail by mistake and delete this e-mail from your system. E-mail transmission cannot be guaranteed to be secure or error-free as information could be intercepted, corrupted, lost, destroyed, arrive late or incomplete, or contain viruses. The sender, therefore, does not accept liability for any errors or omissions in the contents of this message, which arise as a result of e-mail transmission. If verification is required please request a hard-copy version.
-                            </span>
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </body>
+  <style>
+    /* Reset CSS */
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol,
+    ul {
+      list-style: none;
+    }
+    blockquote,
+    q {
+      quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: "";
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    /* Custom CSS */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    table {
+      border: 0;
+      padding: 0;
+      color: rgb(0, 0, 0);
+      font-size: medium;
+      table-layout: fixed;
+    }
+    td {
+      text-align: left;
+      vertical-align: top;
+    }
+    strong {
+      font-weight: bold;
+    }
+    .signature__container {
+      padding-top: 8px;
+      font-size: 10px;
+      line-height: 12px;
+      color: rgb(33, 33, 33);
+    }
+    .signature__container p {
+      margin-bottom: 10px;
+    }
+    .signature__left-column {
+      width: 64px;
+      margin-right: 10px;
+      font-size: 10px;
+      line-height: 12px;
+      margin-bottom: 10px;
+    }
+    .signature__right-column {
+      padding-top: 8px;
+      width: 396px;
+    }
+    .signature__link {
+      color: rgb(71, 124, 204);
+      text-decoration: none;
+    }
+    .signature__disclaimer {
+      color: rgb(135, 135, 135);
+      font-family: Calibri, sans-serif;
+      text-align: justify;
+    }
+    .signature__xibit-digital-logo {
+      border: 0;
+      height: 80px;
+      width: 54px;
+    }
+    .signature__linkedin-logo {
+      margin-bottom: 2px;
+      border: none;
+      display: inline;
+      width: 16px;
+      height: 16px;
+    }
+  </style>
+  <body>
+    <table class="signature__container">
+      <tbody>
+        <tr>
+          <td class="signature__left-column">
+            <p>
+              <a href="https://xibitdigital.com" class="signature__link" target="_blank">
+                <img
+                  src="https://lh3.googleusercontent.com/d/1AUxXAkiSXF997u7x7RnonlBa8Zc0x2XS"
+                  data-aii="CiExQVV4WEFraVNYRjk5N3U3eDdSbm9ubEJhOFpjMHgyWFM"
+                  alt="Xibit Digital Ltd"
+                  class="signature__xibit-digital-logo"
+                />
+              </a>
+            </p>
+          </td>
+          <td class="signature__right-column">
+            <p><strong>Daniele Sangalli</strong> / Director</p>
+            <p>
+              <a href="mailto:daniele@xibitdigital.com" class="signature__link" target="_blank">
+                daniele@xibitdigital.com
+              </a>
+              / +44 7885905951
+            </p>
+            <p>
+              <span>
+                <a href="https://uk.linkedin.com/in/danielesangalli" class="signature__link" target="_blank">
+                  <img
+                    src="https://s3.amazonaws.com/htmlsig-assets/grey/linkedin.png"
+                    alt="LinkedIn"
+                    class="signature__linkedin-logo"
+                  />
+                </a>
+              </span>
+            </p>
+            <p>
+              <span>
+                <strong>Xibit Digital </strong>/
+                <a href="https://xibitdigital.com" class="signature__link" target="_blank"
+                  >https://xibitdigital.com</a
+                >
+              </span>
+            </p>
+            <p>
+              <span class="signature__disclaimer">
+                This message contains confidential information and is intended only for the intended
+                recipients. If you are not an intended recipient you should not disseminate, distribute or
+                copy this e-mail. Please notify the sender immediately by e-mail if you have received this
+                e-mail by mistake and delete this e-mail from your system. E-mail transmission cannot be
+                guaranteed to be secure or error-free as information could be intercepted, corrupted, lost,
+                destroyed, arrive late or incomplete, or contain viruses. The sender, therefore, does not
+                accept liability for any errors or omissions in the contents of this message, which arise as a
+                result of e-mail transmission. If verification is required please request a hard-copy version.
+              </span>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
